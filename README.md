@@ -1,47 +1,87 @@
-# .zshrc for developers [.zshrc-dev]
 
-A powerful, developer-focused `.zshrc` configuration tailored for macOS users who spend a lot of time in the terminal. This setup includes:
+# dev-zsh 🚀
 
-- Colorful, git-aware prompt showing user, host, current folder, and git branch  
-- Handy navigation and system aliases  
-- ImageMagick-powered recursive image resizing functions  
-- Integration with popular language version managers like `nvm` and `pyenv`  
-- Support for enhanced tools such as `fzf`, `bat`, `zoxide`  
-- Syntax highlighting and autosuggestions for a smoother terminal experience  
-- Dynamic terminal title updating
-
-## Features
-
-- **Prompt:** Displays user@host, current folder (in light blue), git branch (yellow), with a right triangle prompt sign  
-- **Aliases:** Frequent shortcuts for git, file navigation, system info, safer delete, and networking  
-- **Image resizing:** `resize1920` and `resize1200` functions resize images only if larger than target width, preserving originals  
-- **Language managers:** Auto-loads `nvm` and `pyenv` if installed  
-- **Enhanced tools:** Uses modern replacements like `bat` for `cat` and `eza` for `ls` if available  
-- **History:** Shared across sessions, with duplicate entries ignored  
-- **Utilities:** Kill process on port, fast directory navigation with `zoxide`  
-
-## Installation
-
-1. Clone or download the repo  
-2. Copy `.zshrc` to your home directory (backup existing `.zshrc` first!)  
-3. Restart your terminal or run `source ~/.zshrc`  
-4. Ensure dependencies like `magick`, `eza`, `fzf`, `bat`, `zoxide`, `nvm`, and `pyenv` are installed for full experience  
-
-## Dependencies
-
-- [ImageMagick](https://imagemagick.org/) (`magick` CLI)  
-- [eza](https://the.exa.website/) (optional replacement for `ls`)  
-- [fzf](https://github.com/junegunn/fzf)  
-- [bat](https://github.com/sharkdp/bat)  
-- [zoxide](https://github.com/ajeetdsouza/zoxide)  
-- [nvm](https://github.com/nvm-sh/nvm)  
-- [pyenv](https://github.com/pyenv/pyenv)  
-
-## License
-
-MIT License
+A **powerful and developer-centric** `.zshrc` configuration for macOS terminal users who want to boost productivity and enjoy a sleek, colorful shell experience. Perfect for software engineers juggling multiple projects, working with Git, managing images, and switching between languages.
 
 ---
 
-Feel free to customize or ask for additions!
+## 🌟 Features
 
+- **🎨 Colorful, git-aware prompt**  
+  Displays your username, host, current folder (in light blue), and the current Git branch (in yellow), with a stylish right triangle prompt sign ▶ — keeping you informed at a glance.
+
+- **🔧 Handy aliases & shortcuts**  
+  Quickly navigate directories, manage Git, inspect system info, search history, and perform safer file operations without typing long commands.
+
+- **🖼️ ImageMagick-powered image resizing**  
+  Recursively resize images with `resize1920` and `resize1200` commands — smartly skips images that are already small or previously resized.
+
+- **⚙️ Language version managers**  
+  Automatic integration with `nvm` for Node.js and `pyenv` for Python, so you can easily manage multiple environments.
+
+- **🚀 Enhanced terminal tools support**  
+  Uses modern replacements like `bat` (for `cat`) and `eza` (for `ls`) if installed — plus `fzf` fuzzy finder and `zoxide` for lightning-fast directory jumping.
+
+- **📚 Shared command history**  
+  Keeps your command history unified across terminal sessions, ignoring duplicate entries for clean recall.
+
+- **🛠️ Developer utilities**  
+  Includes handy functions like killing a process by port (`killport`), plus dynamic terminal title updates for better context.
+
+---
+
+## 🛠️ Installation
+
+1. Clone or download this repo.  
+2. Backup your current `.zshrc`:  
+   ```bash
+   cp ~/.zshrc ~/.zshrc.backup
+   ```  
+3. Copy the new `.zshrc` to your home directory:  
+   ```bash
+   cp path/to/dev-zsh/.zshrc ~/.zshrc
+   ```  
+4. Restart your terminal or reload your config:  
+   ```bash
+   source ~/.zshrc
+   ```  
+5. (Optional) Install dependencies for full feature support (see below).
+
+---
+
+## 📦 Dependencies
+
+To unlock all features, consider installing these tools:
+
+- [ImageMagick](https://imagemagick.org/) (`magick`) — for image resizing  
+- [eza](https://the.exa.website/) — modern `ls` replacement with icons  
+- [fzf](https://github.com/junegunn/fzf) — fuzzy finder for quick searching  
+- [bat](https://github.com/sharkdp/bat) — syntax-highlighted `cat` alternative  
+- [zoxide](https://github.com/ajeetdsouza/zoxide) — fast directory jumper  
+- [nvm](https://github.com/nvm-sh/nvm) — Node.js version manager  
+- [pyenv](https://github.com/pyenv/pyenv) — Python version manager  
+
+You can install most via [Homebrew](https://brew.sh/):
+
+```bash
+brew install imagemagick eza fzf bat zoxide nvm pyenv
+```
+
+---
+
+## 💡 Usage Tips
+
+- Run `resize1920` or `resize1200` in your project folders to batch resize images.  
+- Use `killport <port>` to quickly terminate processes blocking ports.  
+- Use `z` (from `zoxide`) to jump to frequently used directories quickly.  
+- Explore the aliases like `gs` (git status), `ll` (long listing with icons), and more to speed up your workflow.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. Feel free to use and modify as you like!
+
+---
+
+Feel free to contribute, open issues, or suggest improvements! Happy coding! ✨
