@@ -39,7 +39,7 @@ A **powerful and developer-centric** `.zshrc` configuration for macOS terminal u
    ```  
 3. Copy the new `.zshrc` to your home directory:  
    ```bash
-   cp path/to/dev-zsh/.zshrc ~/.zshrc
+   cp path/to/zshrc-dev/.zshrc ~/.zshrc
    ```  
 4. Restart your terminal or reload your config:  
    ```bash
