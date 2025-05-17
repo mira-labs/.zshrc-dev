@@ -1,4 +1,4 @@
-# dev-zsh
+# .zshrc for developers [.zshrc-dev]
 
 A powerful, developer-focused `.zshrc` configuration tailored for macOS users who spend a lot of time in the terminal. This setup includes:
 
