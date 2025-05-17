@@ -1,5 +1,5 @@
 
-# dev-zsh 🚀
+# zshrc-dev 🚀
 
 A **powerful and developer-centric** `.zshrc` configuration for macOS terminal users who want to boost productivity and enjoy a sleek, colorful shell experience. Perfect for software engineers juggling multiple projects, working with Git, managing images, and switching between languages.
 
